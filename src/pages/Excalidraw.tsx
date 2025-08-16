@@ -1,0 +1,33 @@
+import Navbar from "@/components/Navbar";
+import { Excalidraw } from "@excalidraw/excalidraw";
+import "@excalidraw/excalidraw/index.css";
+
+const ExcaliDraw = () => {
+  const savedData = localStorage.getItem('excalidraw')
+  const initialData = savedData ? JSON.parse(savedData) : null
+
+  return (
+    <main className="flex flex-col h-dvh">
+      <Navbar />
+      <div className="flex-1 fixed inset-0 top-8">
+        <Excalidraw
+          initialData={initialData}
+          onChange={(elements, appState) => {
+            localStorage.setItem(
+              "excalidraw",
+              JSON.stringify({
+                elements,
+                appState: {
+                  viewBackgroundColor: appState.viewBackgroundColor,
+                  zoom: appState.zoom,
+                },
+              })
+            )
+          }}
+        />
+      </div>
+    </main>
+  )
+}
+
+export default ExcaliDraw
