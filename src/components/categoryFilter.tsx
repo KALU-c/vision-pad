@@ -14,7 +14,7 @@ export function CategoryFilter({ categories, activeCategory, onCategoryChange }:
         className={cn(
           "px-6 py-2 rounded-xl transition-all duration-200 text-sm font-medium",
           activeCategory === null
-            ? "bg-primary text-primary-foreground shadow-glow"
+            ? "dark:bg-white bg-primary text-primary-foreground shadow-glow"
             : "bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card/80 backdrop-blur-sm border border-border/50"
         )}
       >
@@ -27,7 +27,7 @@ export function CategoryFilter({ categories, activeCategory, onCategoryChange }:
           className={cn(
             "px-6 py-2 rounded-xl transition-all duration-200 text-sm font-medium",
             activeCategory === category.id
-              ? `category-${category.id} text-white shadow-elegant`
+              ? `category-${category.id} dark:text-black text-white dark:bg-white bg-primary shadow-elegant`
               : "bg-card/50 text-muted-foreground hover:text-foreground hover:bg-card/80 backdrop-blur-sm border border-border/50"
           )}
         >

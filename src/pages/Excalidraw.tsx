@@ -1,8 +1,11 @@
 import Navbar from "@/components/Navbar";
+import { useTheme } from "@/components/theme-provider";
 import { Excalidraw } from "@excalidraw/excalidraw";
 import "@excalidraw/excalidraw/index.css";
 
 const ExcaliDraw = () => {
+  const { theme } = useTheme()
+
   const savedData = localStorage.getItem('excalidraw')
   const initialData = savedData ? JSON.parse(savedData) : null
 
@@ -24,6 +27,7 @@ const ExcaliDraw = () => {
               })
             )
           }}
+          theme={theme === "dark" ? "dark" : "light"}
         />
       </div>
     </main>

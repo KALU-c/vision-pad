@@ -11,7 +11,7 @@ interface AppCardProps {
 export function AppCard({ name, description, icon, category, onClick }: AppCardProps) {
   return (
     <div
-      className="group relative gradient-card p-6 rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 hover:scale-105 cursor-pointer animate-scale-in"
+      className="group relative p-6 rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 cursor-pointer animate-scale-in border-white/10 border-1"
       onClick={onClick}
     >
       {/* Category indicator */}
@@ -19,9 +19,10 @@ export function AppCard({ name, description, icon, category, onClick }: AppCardP
 
       {/* App icon */}
       <div className="mb-4 relative">
-        <div className="w-16 h-16 rounded-xl bg-card/50 flex items-center justify-center text-3xl backdrop-blur-sm border border-border/50 group-hover:scale-110 transition-transform duration-300">
-          {icon}
-        </div>
+        <img
+          src={icon}
+          className="w-16 h-16 rounded-xl bg-card/50 flex items-center justify-center text-3xl backdrop-blur-sm border border-border/50 group-hover:scale-110 transition-transform duration-300 object-cover"
+        />
       </div>
 
       {/* App info */}
@@ -32,13 +33,13 @@ export function AppCard({ name, description, icon, category, onClick }: AppCardP
           </h3>
           <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
         </div>
-        <p className="text-muted-foreground text-sm leading-relaxed">
+        <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
           {description}
         </p>
       </div>
 
       {/* Hover glow effect */}
-      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-primary/5 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-primary/5 to-primary/2 pointer-events-none" />
     </div>
   );
 }
