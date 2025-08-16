@@ -37,6 +37,10 @@ jobs:
           for i in 1 2 3; do
             rustup install 1.80.1 --profile minimal --no-self-update && break || sleep 20
           done
+          # Install macOS targets if needed
+          if [[ "${{ matrix.platform }}" == "macos-latest" ]]; then
+            rustup target add aarch64-apple-darwin x86_64-apple-darwin
+          fi
         shell: bash
 
       # Cache Cargo dependencies
