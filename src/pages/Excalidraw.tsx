@@ -3,7 +3,7 @@ import { useTheme } from "@/components/theme-provider";
 import { Excalidraw } from "@excalidraw/excalidraw";
 import "@excalidraw/excalidraw/index.css";
 
-const ExcaliDraw = () => {
+const ExcalidrawPage = () => {
   const { theme } = useTheme()
 
   const savedData = localStorage.getItem('excalidraw')
@@ -34,4 +34,4 @@ const ExcaliDraw = () => {
   )
 }
 
-export default ExcaliDraw
+export default ExcalidrawPage
