@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <main className="flex flex-col">
       <Navbar />
-      <div className="min-h-screen p-8">
+      <div className="flex-1 p-8">
         <div className="max-w-7xl mx-auto">
 
           {/* Search and Filter */}
