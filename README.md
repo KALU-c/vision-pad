@@ -50,7 +50,7 @@ It brings together the best open-source tools for sketching, diagramming, and pr
 
 ## 📦 Downloads
 
-Check the [Releases](https://github.com/KALU-c/visio-pad/releases) page to download VisionPad for your operating system:
+Check the [Releases](https://github.com/KALU-c/vision-pad/releases) page to download VisionPad for your operating system:
 
 - **Windows** → `.msi` installer or `.zip` portable
 - **Linux** → `.deb`, `.rpm`, or `.AppImage`
