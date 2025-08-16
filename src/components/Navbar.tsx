@@ -49,7 +49,7 @@ const Navbar = () => {
         </Button>
       </div>
 
-      <a href="https://github.com/KALU-c" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/KALU-c/vision-pad" target="_blank" rel="noopener noreferrer">
         <Button size={'icon'} variant={'outline'} className="has-[>svg]:px-0 size-6">
           <Github />
         </Button>
