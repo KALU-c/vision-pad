@@ -3,7 +3,7 @@ import { useTheme } from "@/components/theme-provider";
 import { Tldraw } from "tldraw";
 import 'tldraw/tldraw.css';
 
-const TlDraw = () => {
+const TldrawPage = () => {
   const { theme } = useTheme();
 
   return (
@@ -16,4 +16,4 @@ const TlDraw = () => {
   )
 }
 
-export default TlDraw
+export default TldrawPage
