@@ -4,8 +4,6 @@
   <img src="public/logo.png" alt="VisionPad Screenshot" width="600"/>
 </p>
 
----
-
 ## ✨ Overview
 
 **VisionPad** is a modern, offline-first whiteboard app powered by [Tauri](https://tauri.app).  
@@ -69,7 +67,7 @@ Check the [Releases](https://github.com/KALU-c/visio-pad/releases) page to downl
 <p align="center">
   <img src="public/screenshot-1.png" alt="VisionPad Screenshot" width="600"/>
   <img src="public/screenshot-2.png" alt="VisionPad Screenshot" width="600"/>
-  <img src="public/screenshot-2.png" alt="VisionPad Screenshot" width="600"/>
+  <img src="public/screenshot-3.png" alt="VisionPad Screenshot" width="600"/>
 </p>
 
 ## 🤝 Contributing
