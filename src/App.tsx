@@ -1,13 +1,14 @@
-import { Button } from "@/components/ui/button";
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import TlDraw from './pages/TlDraw'
 
-function App() {
+const App = () => {
   return (
-    <main>
-      <Button>
-        Hello
-      </Button>
-    </main>
-  );
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path='tldraw' element={<TlDraw />} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App
